@@ -1,0 +1,13 @@
+Password MAnager Program Uses :- 
+ 1- Dictonary
+ 2- Loops 
+ 3- Conditional
+ 4- Module :- Random
+ 5- File Handling
+
+
+ WEbsite : Password
+
+ Random Module
+ File read/Write
+ Real World
