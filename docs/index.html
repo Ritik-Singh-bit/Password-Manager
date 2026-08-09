@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal Password Manager</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <div class="termbar">
+    <div class="dot r"></div><div class="dot y"></div><div class="dot g"></div>
+    <span class="label">~/password_manager.py</span>
+  </div>
+  <div class="card">
+    <h1><span class="lock">&#128274;</span> Personal Password Manager</h1>
+    <p class="sub">// save · view · generate</p>
+
+     <nav class="menu">
+  <button class="tab-btn active" data-tab="save">1. Save</button>
+  <button class="tab-btn" data-tab="view">2. View</button>
+  <button class="tab-btn" data-tab="generate">3. Generate</button>
+  <button class="tab-btn" data-tab="exit">4. Exit</button>
+</nav>
+
+    <section id="save" class="active">
+      <div class="field">
+        <label for="site-input">Website</label>
+        <input type="text" id="site-input" placeholder="e.g. github.com">
+      </div>
+      <div class="field">
+        <label for="pwd-input">Password</label>
+        <div class="pwd-row">
+          <input type="password" id="pwd-input" placeholder="Enter your password">
+          <button class="icon-btn" id="toggle-pwd" type="button">show</button>
+        </div>
+      </div>
+      <button class="btn" id="save-btn">Save Password</button>
+      <div class="toast" id="save-toast"></div>
+    </section>
+
+    <section id="view">
+      <div id="view-content"></div>
+    </section>
+
+    <section id="generate">
+      <div class="field">
+        <label for="len-input">Length</label>
+        <input type="text" id="len-input" value="8">
+      </div>
+      <button class="btn" id="gen-btn">Generate Password</button>
+      <div class="gen-out" id="gen-out" style="display:none;">
+        <div class="val" id="gen-val"></div>
+        <div class="actions">
+          <button class="icon-btn" id="gen-copy">copy</button>
+          <button class="btn ghost" id="gen-use" style="width:auto; padding:9px 16px;">use for new entry</button>
+        </div>
+      </div>
+    </section>
+    <section id="exit">
+  <div class="bye">
+    <div class="bye-msg">OK Byee....</div>
+    <p class="bye-sub">You can close this tab now.</p>
+  </div>
+</section>
+    
+
+    <p class="foot-note">stored in this browser's local storage — not sent anywhere</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
