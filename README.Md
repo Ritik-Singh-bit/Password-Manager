@@ -16,6 +16,7 @@ A simple password manager built two ways as a learning project — a Python CLI 
 
 
 password-manager/
+
 ├── front/
 │ ├── index.html # Web app markup
 │ ├── style.css # Styling
